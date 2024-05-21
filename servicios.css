@@ -5,11 +5,7 @@
 
 /* Encabezado */
 .titulo {
-    display: flex;
-    justify-content: center;
-    background-color: #1E0342;
-    color: #17A589;
-    align-items: center;
+    color: white;
 
 }
 
