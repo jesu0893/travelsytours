@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        a,
+        p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+
+        <header class="header">
+            <div class="div logo">
+                <a class="fondo-azul" id="arriba"> <img class="fondo-azul" src="img-principal/logo.png" alt="logo"> </a>
+            </div>
+
+            <div class="div titulo">
+                <h1 id="titulo">Travels & Tours</h1>
+            </div>
+
+            <div class="div nav">
+                <nav class="nav">
+                    <ul class="paginas">
+                        <li class="pagina"> <a class="fondo-azul" href="index.html"> Principal
+                            </a> </li>
+                        <li class="pagina"> <a class="fondo-azul" href="nosotros.html"> Sobre
+                                Nosotros </a> </li>
+                        <li class="pagina"> <a class="fondo-azul" href="servicios.html">
+                                Nuestros Servicios </a> </li>
+                        <li class="pagina"> <a class="fondo-azul" href="contacto.html"> Contacto
+                            </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="contenedor">
+            <!-- <section class="contacto"> -->
+            <div>
+                <h2>Contactanos</h2>
+                <div class="contenido-contacto">
+                    <div class="grid-item">
+                        <div class="informacion-contacto">
+                            <div class="grid-itemI">
+                                <h3> Información de Contacto</h3>
+                            </div>
+                            <div class="grid-itemI">
+                                <div class="espacios">
+                                    <img src="img_contacto/vision.jpg" alt="Información de contacto" class="rotate-image">
+                                </div>
+                            </div>
+                                <div class="grid-itemI">
+                                    <p>
+                                        Travels_Tours@gmail.com.ar
+                                    </p>
+                                </div>
+                                <div class="grid-itemI">
+                                    <p> 11-54654656455656</p>
+                                </div>
+                            </div>
+                            <div class="espacios2">
+                                <br> <br> <br> <br> <br>
+                                <br> <br> <br> <br> <br>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <form class="formulario-contacto" name="fcontacto">
+                                <div class="input-contacto">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Andrea Perez">
+                                </div>
+                                <div class="input-contacto">
+                                    <label for="correo">email</label>
+                                    <input type="text" name="correo" id="correo" placeholder="andreaP@example.com">
+                                </div>
+                                <div class="input-contacto">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="text" name="telefono" id="telefono" placeholder="0351-456456">
+                                </div>
+                                <div class="input-contacto">
+                                    <label for="celular">Movil</label>
+                                    <input type="text" name="celular" id="celular" placeholder="3515224322">
+                                </div>
+                                <div class="input-contacto">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea name="mensaje" id="mensaje"></textarea>
+                                </div>
+                                <div class="buttom-contacto">
+                                    <input type="submit" value="Enviar" class="btn_azul" onclick="validaContacto1()">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- </section> -->
+            </div>
+
+            <footer class="footer">
+                <div class="contacto">
+                    <h2>Contactanos</h2>
+                    <p>si queres mas informacion sobre algun servicio, <br>
+                        sobre la empresa o saber de ofertas y descuentos <br>
+                        no dudes en contactarnos
+                    </p>
+                    <h3> <a href="contacto.html"> Contacto </a></h3>
+                </div>
+
+                <div class="redes">
+
+                    <a href="https://www.facebook.com/">
+                        <img src="img-principal/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="img-principal/twitter.png" alt="facebook">
+                    </a>
+                    <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe">
+                        <img src="img-principal/gmail.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="img-principal/instagram.png" alt="facebook">
+                    </a>
+                </div>
+
+                <div class="mapa">
+                    <iframe width="200" height="200"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14488.316710797657!2d-65.43033516158937!3d-24.792742168844732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3ae473fe591%3A0x60e96202172e2a4!2sAv.%20San%20Mart%C3%ADn%201230%2C%20Salta!5e0!3m2!1ses!2sar!4v1713887222886!5m2!1ses!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <br>
+            </footer>
+        </div>
+        <script src="contacto_Validacion.js"></script>
+</body>
+
+
+</html>

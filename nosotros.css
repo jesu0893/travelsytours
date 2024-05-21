@@ -1,0 +1,166 @@
+body {
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.contenedor-texto {
+  margin-top: 20px;
+  margin-left: 20px;
+  /* Ajusta según sea necesario */
+  margin-right: 60px;
+}
+
+.footer,
+.articulo{
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+.header {
+  background-color: rgb(3, 3, 141);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.logo,
+.titulo,
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 600px) {
+  .paginas {
+    flex-direction: column;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+
+}
+
+.pagina {
+  background-color: rgb(102, 0, 255);
+  padding: 5px;
+  margin: 10px;
+  border: 10px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+a {
+  color: #17A589;
+  padding: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(10, 10, 10);
+  animation: 0.5s infinite boton-menu;
+}
+
+
+main {
+  background: linear-gradient(to bottom, #87CEEB, #32CD32);
+  /* Degradado de celeste a verde */
+  padding: 20px;
+}
+
+.main-image {
+  transition: transform 0.3s;
+  /* Duración de la transición de 0.3 segundos */
+  margin: 10px;
+  /* Agrega un espacio alrededor de las imágenes */
+}
+
+.main-image:hover {
+  transform: scale(1.1);
+  /* Escala del 110% al pasar el cursor sobre la imagen */
+  filter: brightness(1.2);
+  /* Ajustar el brillo de la imagen al 120% */
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section img {
+  max-width: 30%;
+}
+
+
+@media screen and (max-width: 800px) {
+  section {
+    flex-direction: column;
+    /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+  }
+
+  section img {
+    max-width: 100%;
+    /* Ajusta el ancho de las imágenes al 100% en pantallas pequeñas */
+    margin-top: 10px;
+    /* Agrega un margen superior a las imágenes en pantallas pequeñas */
+  }
+}
+
+/*  FOOTER   */
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-footer{
+  width: 50;
+  height: auto;
+  max-width: 300px;
+}
+
+
+@media all and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+
+}

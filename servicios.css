@@ -1,0 +1,444 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Encabezado */
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-color: #1E0342;
+    color: #17A589;
+    align-items: center;
+
+}
+
+
+.padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer,
+.articulo,
+.header {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+
+.a-nosotros {
+    color: black;
+}
+
+/*  AREA CENTRAL   */
+.articulo {
+    background-color: white;
+}
+
+.aside {
+    background-color: rgb(67, 67, 243);
+    color: white;
+}
+
+
+.articulo {
+    flex: 1 1 50%;
+}
+
+.aside {
+    flex: 1 1 25%;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        flex-wrap: wrap;
+    }
+
+    .articulo {
+        order: 1;
+    }
+
+
+    .articulo {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        flex-wrap: wrap;
+    }
+
+    .articulo {
+        flex: 1 1 100%;
+    }
+
+    .aside {
+        flex: 1 1 100%;
+    }
+}
+
+
+/*    HEADER   */
+.header{background-color: rgb(3, 3, 141);
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+    
+    @media all and (max-width: 800px){
+        .header{flex-direction: column;}
+    }
+    
+    .logo, .titulo, .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .paginas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    @media all and (max-width: 600px){
+        .paginas{flex-direction: column;}
+    }
+    
+    ul {
+        list-style: none;
+        padding: 5px;
+    
+    }
+    
+    .pagina {
+        background-color: rgb(102, 0, 255);
+        padding: 5px;
+        margin: 10px;
+        border: 10px rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    
+    a {
+        color: #17A589;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        background-color: aquamarine;
+        animation: 0.5s infinite boton-menu;
+    }
+
+/*  FOOTER   */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.img {
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+}
+
+/*-----------------------------------------------------------------------*/
+/* Menu Barra de navegacion */
+/* Estilos del Menu*/
+.menu-pag {
+    width: 100%;
+
+}
+
+.menu {
+    background-color: #0E46A3;
+    color: #17A589;
+    text-align: center;
+    height: 100%;
+    /*position: fixed;*/
+}
+
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+li {
+    display: inline-flex;
+}
+
+a {
+    color: #17A589;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: aquamarine;
+    animation: 0.5s infinite boton-menu;
+}
+
+/* Cuerpo */
+.fondo {
+    background: linear-gradient(to top, #17A589, rgb(67, 67, 243))
+}
+
+h2 {
+    color: rgb(197, 238, 214);
+    text-align: center;
+    font-size: 2em;
+    font-style: oblique;
+}
+
+.titulo-pagina{
+    margin: 20px 0px;
+}
+
+.titulo-pagina h2{
+    color: white;
+    font-size: 4rem;
+    font-style:normal;
+}
+.titulo-footer {
+    color: white;
+    font-style: normal;
+}
+
+/*----------------------------------------------------------------------------*/
+/*seccion Excursiones*/
+
+.excursiones-padre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.contenedor-excursiones {
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(238, 242, 240);
+    border: 5px solid rgb(107, 97, 97);
+    border-radius: 8%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*seccion Alojamiento*/
+.catalogo-alojamiento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.alojamiento-cuadros img {
+    max-width: 1000px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.alojamiento-cuadros {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contenedor-excursiones img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.alojamiento-cuadros img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.promocion img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.fondo-azul img {
+    width: auto;
+}
+
+/*------------------------------------------------------------------------------*/
+/*Seccion Promociones*/
+.promociones {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.promocion {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.promocion img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.promocion h3 {
+    font-size: 20px;
+}
+
+.promocion p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.promocion .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Seccion opiniones*/
+.opiniones {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.opinion {
+    margin: 40px;
+    padding: 10px;
+    background-color: #ddf0f3;
+    border: 1px solid #ccc;
+}
+
+.opinion blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 0 10px;
+    border-left: 3px solid #ccc;
+}
+
+.opinion span {
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+
+
+@media (min-width: 601px) {
+    .excursiones-padre {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        margin: 40px 0px;
+    }
+
+    .contenedor-excursiones {
+        height: fit-content;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(238, 242, 240);
+        border: 5px solid rgb(107, 97, 97);
+        border-radius: 8%;
+
+    }
+
+    .promocion-catalogo {
+        display: flex;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 801px) {
+    .img-excursiones {
+        transition: 0.3s;
+    }
+
+    .contenedor-excursiones:hover .img-excursiones {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+
+    }
+
+    .contenedor-excursiones {
+        overflow: hidden;
+        padding: 5px;
+    }
+
+
+    .contenedor-excursiones:hover {
+        transition: 0.2s;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px #35b651;
+        -webkit-box-shadow: 0px 0px 15px 15px #17A589;
+    }
+
+    .promocion-catalogo {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .alojamiento-img {
+        transition: 0.3s;
+    }
+
+    .alojamiento-cuadros:hover img {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        border-radius: 50%;
+        -webkit-border-radius: 15%;
+    }
+
+}
+h3 {
+    color: rgb(252, 243, 243)
+}
